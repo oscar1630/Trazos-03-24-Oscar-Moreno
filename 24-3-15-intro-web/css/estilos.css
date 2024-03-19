@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    /*quitar subrayado, underline si quieres que te lo subraye*/
+}
+
+body{
+    background-color: lightgray;
+    color: brown;
+}
+
+header{
+    background-color: white;
+    text-align: center;
+    /*border: 20px solid rgb(0, 255, 195);
+    margin: 30px;
+    padding: 20px;*/
+} 
+
+nav{
+    background-color: orangered;
+    /*padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;*/
+    margin-top: 20px;
+}
+
+nav a{
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+nav a:hover{
+    color: orangered;
+    background-color: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+#foto_grande{
+    width: 100%;
+}
+
+.contenedor{
+    width: 70%;
+    margin: auto;
+}
+
+section.contenedor{
+    margin: 50px auto;
+}
+
+.servicios * {
+    margin: 20px 0;
+}
+.servicios{
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 5px ; /*esquinas redondas*/
+    color: black;
+}
+
+.servicios a{
+    background-color: orangered;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.servicios a:hover{
+    color: orangered;
+    background-color: white;
+}
+
+footer{
+    background-color: orangered;
+    text-align: center;
+    padding: 10px;
+}

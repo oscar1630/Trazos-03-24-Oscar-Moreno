@@ -1,0 +1,21 @@
+/*Selector por etiquetas*/
+p{
+    color: red; 
+}
+h2{
+    background-color: orange;
+}
+/*Asi se hace un comentario*/
+
+/*Selector por ID*/
+#titulo{
+    background-color: blueviolet;
+    width: 50%;
+}
+/*Selector por Clase*/
+.producto{
+    background-color: chartreuse;
+}
+.fondo{
+    background-color: gray;
+}
