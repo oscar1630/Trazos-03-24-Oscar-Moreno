@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0.6419161414565826) 50%,
+      rgba(0, 212, 255, 1) 100%
+    ),
+    url(../images/patron.jpeg);
+}
+
+h1 {
+  width: 50%;
+  padding: 20px;
+  background-color: aqua;
+}
+
+#banner {
+  background: url(../images/muygrande.png);
+  padding: 150px;
+  width: 80%;
+  margin: 50px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed; Para que la imagen se quede fija aunque hagas scroll*/
+  background-position: bottom;
+}
