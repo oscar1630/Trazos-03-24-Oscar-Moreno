@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: lightblue;
+}
+/*Header*/
+.medio {
+  background-color: beige;
+}
+.logos {
+  width: 75%;
+  text-align: right;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: beige;
+}
+
+.medio {
+  text-align: center;
+}
+header img{
+  padding: 20px;
+}
+header nav {
+  padding: 15px;
+}
+header nav a {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  margin: 15px auto;
+}
+header nav a:hover {
+  background-color: gray;
+  color: blue;
+}
+/*Primer Section*/
+
+.primero {
+  text-align: center;
+  padding: 200px;
+  background: url(../images/bernabelchiqui.jpeg), url(../images/bernabeu.jpeg);
+  background-size: 300px, cover;
+  background-repeat: no-repeat;
+  background-position: 150px, center;
+}
+
+.primero div {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.577);
+  width: 50%;
+  margin-left: 30%;
+}
+
+.primero div a {
+  padding: 15px;
+  background-color: blue;
+  color: white;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.primero div a:hover {
+  background-color: gray;
+  color: blue;
+}
+
+/*Segundo Section*/
+.segundo {
+  background-color: beige;
+  text-align: center;
+  width: 70%;
+  padding: 30px;
+  margin: 50px auto;
+}
+.segundo ul {
+  width: 20%;
+  margin: auto;
+  text-align: left;
+}
+
+/*Tercer Section*/
+.tercero {
+  background-color: beige;
+  text-align: center;
+  width: 70%;
+  padding: 30px;
+  margin: 50px auto;
+}
+.tercero iframe {
+  width: 100%;
+  margin: auto;
+}
+.tercero a {
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.tercero a:hover {
+  background-color: gray;
+  color: blue;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  background-color: beige;
+}
+footer div img {
+  padding-top: 20px;
+  margin-right: 50px;
+}
+footer a {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+}
+footer a:hover{
+  background-color: gray;
+  color: blue;
+}
+footer p {
+  margin-top: 20px;
+}
