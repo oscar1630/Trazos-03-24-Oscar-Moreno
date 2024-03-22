@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: grey;
+}
+a{
+    text-decoration: none;
+}
+/*Header*/
+header{
+    text-align: center;
+    margin: auto;
+}
+header nav{
+    text-align: right;
+}
+header nav a{
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+}
+/*Primer Section*/
+.primero{
+    background-image: url(../images/grande.png);
+    padding: 300px;
+    background-repeat: no-repeat;
+}
+/*Tabla*/
+#horario {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  border: 1px solid black;
+}
+td:first-child {
+  border: 1px solid black;
+  color: white;
+}
+tr td:first-child {
+  background-color: lightcoral;
+}
+tr:first-child {
+  background-color: lightcoral;
+  color: white;
+}
+/*Colores*/
+.atac {
+  background-color: lightsalmon;
+}
+.expresion {
+  background-color: lightgoldenrodyellow;
+}
+.muscular {
+  background-color: lightslategray;
+}
+.puls {
+  background-color: lightpink;
+}
+.yoga {
+  background-color: lightgreen;
+}
+.pump {
+  background-color: lightcyan;
+}
+.pilates {
+  background-color: bisque;
+}
+.estirar {
+  background-color: violet;
+}
+.ciclo {
+  background-color: orange;
+}
+.aqua {
+  background-color: aqua;
+}
+.CERRADO {
+  background-color: red;
+}

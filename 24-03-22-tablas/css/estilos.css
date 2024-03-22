@@ -1,0 +1,49 @@
+#horario{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+tr{
+    height: 60px;
+}
+tr td:first-child{
+    background-color: gray;
+}
+tr:first-child{
+    background-color: gray;
+    color: white;
+}
+td, th{
+    border: 1px solid black
+}
+.mates{
+    background-color: lightblue;
+}
+.lengua{
+    background-color: bisque;
+}
+.ingles{
+    background-color: aqua;
+}
+.etica{
+    background-color: lightgreen;
+}
+.fisica{
+    background-color: lightgray;
+}
+.sociales{
+    background-color: pink;
+}
+.filosofia{
+    background-color: brown;
+}
+.descanso{
+    background-color: yellow;
+}
+.Quimica{
+    background-color: greenyellow;
+}
+.EF{
+    background-color: red;
+}
