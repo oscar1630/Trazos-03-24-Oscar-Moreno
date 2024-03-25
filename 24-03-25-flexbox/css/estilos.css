@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/leon.jpeg);
+}
+section{
+    width: 80%;
+    margin: 50px auto;
+}
+.flex{
+    display: flex;
+    
+}
+img{
+    max-width: 100%;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+section > div{
+    width: 25%;
+    padding: 20px;
+}
+section div div{
+    background-color: chocolate;
+    border: 10px solid white;
+}
