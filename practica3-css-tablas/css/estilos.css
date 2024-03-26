@@ -12,21 +12,45 @@ a{
 header{
     text-align: center;
     margin: auto;
+    padding: 20px;
+}
+header img{
+  margin-top: 15px;
 }
 header nav{
     text-align: right;
 }
 header nav a{
     padding: 10px;
-    margin: 10px;
+    margin: 7px;
     background-color: white;
     color: black;
 }
 /*Primer Section*/
 .primero{
     background-image: url(../images/grande.png);
-    padding: 300px;
+    padding: 100px;
     background-repeat: no-repeat;
+}
+.primero div{
+     margin-left: 80px;
+     margin-top: 220px;
+     background-color: rgba(255, 255, 255, 0);
+     text-align: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: large;
+     color: lightgray;
+}
+/*Segundo Section*/
+.segundo{
+    margin: auto;
+    margin-top: 30px;
+    width: 35%;
+    text-align: center;
+}
+.segundo h3{
+  padding: 15px;
+  
 }
 /*Tabla*/
 #horario {
@@ -82,4 +106,26 @@ tr:first-child {
 }
 .CERRADO {
   background-color: red;
+}
+
+
+/*Tercer Section*/
+.tercero{
+    margin: auto;
+    margin-top: 30px;
+    width: 35%;
+    text-align: center;
+}
+.tercero h2{
+  padding: 10px;
+}
+.tercero iframe{
+  width: 100%;
+}
+
+/*Footer*/
+footer{
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
 }
