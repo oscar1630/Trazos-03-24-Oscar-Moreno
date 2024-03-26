@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+body{
+    font-family: "Oranienbaum", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin: 100px 0;
+}
+div{
+    margin: 10px 0;
+}
+img{
+    max-width: 100%;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid red;
+}
+ nav{
+    background-color: red;
+    
+}
+nav a{
+    display: inline-block;
+    padding: 10px 15px;
+    color: blue;
+}
+nav a:hover{
+    background-color: blue;
+    color: red;
+}
+
+/*Contenedores y clases*/
+
+.contenedor90{
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor50{
+    width: 50%;
+}
+
+.contenedor33{
+    width: 33.33%;
+    padding: 20px;
+}
+.contenedor60{
+    width: 60%;
+}
+.contenedor40{
+    width: 40%;
+}
+.contenedor25{
+    width: 25%;
+}
+
+.dflex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+.centro{
+    text-align: center;
+}
+/*Links Ver MAS*/
+
+section div div a{
+    background-color: red;
+    color: blue;
+    display: inline-block;
+    padding: 20px;
+}
+section div div a:hover{
+    background-color: blue;
+    color: red;
+}
+/*Footer*/
+footer{
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer div{
+    margin: 10px;
+}
