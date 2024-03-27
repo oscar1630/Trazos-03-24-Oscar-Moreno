@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: lightgrey;
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid red;
+}
+ nav{
+    background-color: red;
+    
+}
+nav a{
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+}
+nav a:hover{
+    background-color: grey;
+}
+
+/*contenedores clases*/
+
+.contenedor80{
+    width: 80%;
+    margin: 100px auto;
+}
+
+.contenedor60{
+    width: 60%;
+    margin: 100px auto;
+}
+
+.dflex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.ancho33{
+    width: 33.33%;
+}
+.ancho40{
+    width: 40%;
+}
+
+.ancho60{
+    width: 60%;
+}
+
+.ancho100{
+    width: 100%;
+}
+
+section > div{
+    padding: 20px;
+}
+
+/*Links ver mas*/
+section div div a{
+    background-color: red;
+    color: white;
+    margin: 10px 0;
+    display: inline-block;
+    padding: 10px;
+}
+section div div a:hover{
+    background-color: grey;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+footer a{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+footer a:hover{
+    background-color: grey;
+}
+.rrss{
+    background-color: lightgrey;
+}
+.rrss:hover{
+    background-color: lightgrey;
+}

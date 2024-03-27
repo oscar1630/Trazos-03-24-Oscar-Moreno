@@ -1,16 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-section{
-    width: 80%;
-    margin: 50px auto;
+section {
+  width: 80%;
+  margin: 50px auto;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
-.flex{
-    display: flex;
-    gap: 30px;
+.flex {
+  display: flex;
+  gap: 30px;
+}
+section div.flex {
+  margin: 20px 0;
+  align-items: center;
+}
+section div.flex div {
+  width: 50%;
 }
