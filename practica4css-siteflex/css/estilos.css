@@ -3,11 +3,122 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: lightgrey;
+}
+section{
+    padding: 30px;
+}
 /*Header*/
 header{
     align-items: center;
     justify-content: space-between;
     display: flex;
-    
+    background-color: white;
 }
+header nav{
+    margin: 20px 100px;
+}
+header nav a{
+    padding: 10px;
+    border-right: 3px solid black ;
+    color: black;
+    align-items: center;
+}
+header nav a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+/*Clases de tamaños*/
+
+.ancho50{
+    width: 50%;
+}
+
+.ancho33{
+    width: 33%;
+}
+
+.ancho60{
+    width:60%;
+}
+.ancho40{
+    width: 40%;
+}
+.ancho70{
+    width: 70%;
+}
+.ancho30{
+    width: 30%;
+}
+.ancho200px{
+    width: 200px;
+}
+/*Clases flex*/
+
+.dflex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.espacio{
+    justify-content: space-between;
+}
+.alinear{
+    align-items: center;
+}
+/*Estilos sueltos*/
+.centro{
+    text-align: center;
+}
+.derecha{
+    text-align: right;
+}
+.margin10{
+    margin: 10px;
+}
+.margin30{
+    margin: 30px;
+}
+.margintop100px{
+    margin-top: 100px;
+}
+.padding10{
+    padding: 10px;
+}
+.padding100{
+    padding: 100px;
+}
+.fondo{
+    background-color: white;
+}
+
+/*Section 2 Divs*/
+.divs2{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px auto;
+}
+.divs2 a{
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+.divs2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Footer*/
+
