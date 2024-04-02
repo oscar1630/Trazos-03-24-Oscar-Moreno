@@ -12,6 +12,9 @@ a{
 section{
     padding: 60px 0;
 }
+.margin{
+    margin: 0 10%;
+}
 /*Cols*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

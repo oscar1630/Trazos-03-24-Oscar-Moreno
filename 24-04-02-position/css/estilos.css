@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: black;
+  text-align: center;
+}
+nav {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+nav ul li a {
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a:hover {
+  color: gray;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul ul {
+  left: 100px;
+  top: 85px;
+}
+.rrss {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  z-index: 1;
+  background-color: black;
+  padding: 5px;
+}
+.rrss a {
+  display: block;
+  color: white;
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+.rrss a:hover {
+  color: gray;
+}
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 15px;
+}
+.contenedor {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.grande {
+  width: 100%;
+}
+
+.publi {
+  position: relative;
+}
+.publi > div {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+}
+.publi h3 {
+  font-size: 30px;
+}
+.publi div div {
+  text-align: center;
+}
+.publi div div a {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+}
+.publi div div a:hover {
+  color: gray;
+}
