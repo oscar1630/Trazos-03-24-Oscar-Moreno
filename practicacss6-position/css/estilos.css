@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header*/
+header {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+}
+header div {
+  background-color: white;
+  text-align: center;
+}
+
+header div ul li:hover {
+  background-color: grey;
+}
+header div ul li ul {
+  display: none;
+}
+header div ul li:hover ul {
+  display: block;
+}
+li a {
+  color: black;
+  padding: 15px;
+  display: block;
+}
+header div ul ul a{
+    display: block;
+    padding: 10px; 
+}
+header div ul ul a:hover{
+    background-color: white;
+    border: 1.3px solid black;
+}
+/*rrss*/
+.rrss {
+  background-color: black;
+  position: fixed;
+  right: 1%;
+  top: 20%;
+}
+.rrss a {
+  display: block;
+  font-size: 1.5em;
+  margin: 5px 0;
+  padding: 5px;
+  color: white;
+}
+.rrss a:hover {
+  background-color: grey;
+}
+/*Imagen grande*/
+.imggrande {
+  width: 100%;
+}
+/*Flex y wrap*/
+.flex {
+  display: flex;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Section 2*/
+.col-3 {
+  width: 25%;
+  padding: 20px;
+}
+.marginleft {
+  margin-left: 300px;
+}
+.contenedor80 {
+  width: 80%;
+  margin: 0 auto;
+}
+.carta {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.carta p {
+  position: absolute;
+  color: black;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.38);
+  padding: 80px;
+}
+.carta:hover p {
+  display: block;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+footer div a {
+  color: white;
+  font-size: 1.5em;
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  background-color: black;
+  padding: 10px;
+}
+footer div a:hover {
+  background-color: grey;
+}
