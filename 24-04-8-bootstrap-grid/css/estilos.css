@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: black;
+    color: white;
+}
+.azul{
+    background-color: blue;
+}
+.rosa{
+    background-color: pink;
+}
+.verde{
+    background-color: green;
+}
+.naranja{
+    background-color: orange;
+}
+div{
+    border: 2px solid white;
+    height: 100px;
+}
