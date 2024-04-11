@@ -27,23 +27,53 @@ nav a:hover{
 .rrss a{
     color: white;
 }
-.rrss a:hover{
+.rrss a:hover, .active{
     background-color: white;
     color: red;
+}
+.color-fondo{
+    background-color: red;
+}
+footer{
+    border-top: 2px solid black;
+}
+.rrssf{
+    font-size: 1.5em;
+    z-index: 4;
+}
+.rrssf a{
+    color: white;
+}
+.textofoto{
+    display: none;
+}
+.bordeblanco{
+    border: 40px white solid;
 }
 
 
 
 
-
-
-
 @media (min-width: 576px) { }
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    .textofoto{
+        display: block;
+    }
+    .fotogrande{
+        position: relative;
+    }
+    .fotogrande div{
+        position: absolute;
+        color: white;
+        top: 80%;
+        left: 20%;
+        text-align: center;
+    }
+ }
 @media (min-width: 992px) { }
 @media (min-width: 1200px) {
     .rrss{
-        position: absolute;
+        position: fixed;
         right: 1%;
         top: 100px;
         background-color: white;   
