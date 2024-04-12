@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+section{
+    width: 80%;
+    margin: 50px auto;
+}
+div{
+    margin: 15px;
+    background-color: red;
+}
+a{
+    text-decoration: none;
+}
+a.boton1{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: al 1s ease,;
+    opacity: 1;
+}
+a.boton1:hover{
+    background-color: rgb(71, 71, 166);
+    border-radius: 10px;
+    width: 300px;
+    /*transition: all 1s ease;*/
+    transition: 
+    width 1s ease, opacity 1s linear 1s, background-color 2s ease;
+    opacity: 0.5;
+}
+
+a.boton2{
+    text-align: center;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    width: 200px;
+
+}
+a.boton2:hover{
+    transform: scale(2);
+    transition: all 0.5 ease;
+}
+.flex{
+    display: flex;
+}
+.col-6{
+    width: 50%;
+}
+.card:hover .efecto1{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+    opacity: 0.7;
+}
+
+.card .efecto1{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.card{
+    overflow: hidden;
+    position: relative;
+}
+.card-texto{
+    position: absolute;
+    transition: all 1s ease;
+    bottom: 0;
+    height: 100px;
+    bottom: -150px;
+
+}
+.card:hover .card-texto{
+    transition: all 1s ease;  
+    opacity: 1;
+    bottom: 0%;
+}
