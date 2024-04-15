@@ -21,16 +21,26 @@ a{
 header{
     text-align: center;
     margin: 0 auto;
-}
-nav{
     background-color: lightgreen;
+}
+
+nav{
+    
 }
 nav a{
     display: block;
     margin: 10px;
 }
-
-
+.hijo4{
+    display: none;
+}
+.col-5, .col-7{
+    width: 100%;
+}
+.centrar{
+    text-align: center;
+    margin: 0 auto;
+}
 @media (min-width: 576px) { }
 @media (min-width: 768px) { }
 @media (min-width: 992px) { }
