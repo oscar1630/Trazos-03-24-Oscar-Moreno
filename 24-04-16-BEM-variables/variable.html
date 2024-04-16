@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio BEM Variable</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="header flex alinear-items-extremos alinear-items-v">
+        <a class="header__link" href=""><img class="header_logo" src="images/logo.jpeg" alt=""></a>
+        <nav class="nav">
+            <a class="nav__link nav__link--activo" href="">Servicios</a>
+            <a class="nav__link" href="">Empresa</a>
+            <a class="nav__link" href="">Noticias</a>
+        </nav>
+        <button class="header__bag"> <i class="bi bi-bag"></i></button>
+    </header>
+    <section class="banner contenedor">
+        <img class="banner__img" src="images/grande.webp" alt="">
+        <div class="banner__contenido">
+            <p class="banner__titular">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum alias accusamus odit blanditiis
+                placeat sunt esse, delectus molestiae cupiditate labore nulla ab sint omnis. Aspernatur quo ut quibusdam
+                incidunt!
+            </p>
+            <a class="btn btn--banner" href="">Mas Info</a>
+        </div>
+    </section>
+    <section class="contenedor flex wrap productos">
+        <h2 class="productos__titular col-12">Productos</h2>
+        <div class="col-3">
+            <div class="productos_card productos_card--oferta centrar-texto">
+                <h3 class="productos__nombre">Lorem ipsum mimimi</h3>
+                <img class="productos__img" src="images/producto.jpeg" alt="">
+                <div>
+                    <button class="btn productos__btn">Comprar <i class="bi bi-bag"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="productos_card centrar-texto">
+                <h3 class="productos__nombre">Lorem ipsum mimimi</h3>
+                <img class="productos__img" src="images/producto.jpeg" alt="">
+                <div>
+                    <button class="btn productos__btn">Comprar<i class="bi bi-bag"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="productos_card centrar-texto">
+                <h3 class="productos__nombre">Lorem ipsum mimimi</h3>
+                <img class="productos__img" src="images/producto.jpeg" alt="">
+                <div>
+                    <button class="btn productos__btn">Comprar <i class="bi bi-bag"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="productos_card centrar-texto">
+                <h3 class="productos__nombre">Lorem ipsum mimimi</h3>
+                <img class="productos__img" src="images/producto.jpeg" alt="">
+                <div>
+                    <button class="btn productos__btn">Comprar <i class="bi bi-bag"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor empresa flex">
+        <div class="col-6">
+            <img class="empresa__img empresa__img--grande" src="images/8x8.png" alt="">
+        </div>
+        <div class="col-6 flex wrap">
+            <h2 class="col-12 empresa__titular">Sobre Nosotros</h2>
+            <div class="col-6"><img class="empresa__img" src="images/8x5.jpeg" alt=""></div>
+            <div class="col-6">
+                <p class="empresa__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum </p>
+            </div>
+            <div class="col-6"><img class="empresa__img" src="images/8x5-2.jpeg" alt=""></div>
+            <div class="col-6">
+                <p class="empresa__texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor flex wrap blog">
+        <h2 class="col-12 blog_titular"> BLOG</h2>
+        <div class="col-4">
+            <div class="post">
+                <div class="post__imagen">
+                    <a href=""><img class="post__img" src="images/blog-img-8x5.webp" alt=""></a>
+                    <span class="post__search"><i class="bi bi-search"></i></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="post">
+                <div class="post__imagen">
+                    <a href=""><img class="post__img" src="images/blog-img-8x5.webp" alt=""></a>
+                    <span class="post__search"><i class="bi bi-search"></i></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="post">
+                <div class="post__imagen">
+                    <a href=""><img class="post__img" src="images/blog-img-8x5.webp" alt=""></a>
+                    <span class="post__search"><i class="bi bi-search"></i></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
