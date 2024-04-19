@@ -166,8 +166,35 @@ a{
     /*Deportes*/
     .deportes{
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "uno dos"
+        ;
     }
-    .deportes
+    .deportes__uno{
+        grid-area: uno;
+        display: flex;
+        align-items: center;
+    }
+    .uno__imagen{
+        width: 50%;
+        height: 100%;
+    }
+    .uno__texto{
+        width: 50%;
+    }
+    .deportes__dos{
+        grid-area: dos;
+        display: flex;
+        align-items: center;
+    }
+    .dos__imagen{
+        width: 50%;
+        eight: 100%;
+    }
+    .dos__texto{
+        width: 50%;
+    }
  }
 @media (min-width: 1200px) {
     .noticiones{
@@ -184,4 +211,6 @@ a{
         height: 300px;
     }
  }
-@media (min-width: 1400px) { }
+@media (min-width: 1400px){
+
+}
