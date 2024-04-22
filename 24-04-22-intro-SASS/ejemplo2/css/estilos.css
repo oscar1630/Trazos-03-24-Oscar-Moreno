@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+/*variables*/
+/*generales*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jersey 25", sans-serif;
+}
+
+/*header*/
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav {
+  background-color: red;
+}
+.nav .nav__link {
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+.nav .nav__link:hover, .nav .nav__link--activo {
+  background-color: black;
+  color: red;
+  border: 1px solid red;
+}
+
+@media (min-width: 768px) {
+  .nav .nav__link {
+    display: inline-block;
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    text-align: right;
+  }
+}
+/*inicio*/
+/*footer*//*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,41 @@
+/*header*/
+.header{
+    text-align: center;
+    padding: 20px;
+    
+}
+.nav{
+    background-color: $color-rojo;
+    .nav__link{
+        border: 1px solid $color-negro;
+        color: $color-negro;
+        padding: 10px;
+        display: block;
+        &:hover , &--activo{
+            background-color: $color-negro;
+            color: $color-rojo;
+            border: 1px solid $color-rojo;
+        }
+    }
+}
+
+
+
+@media (min-width: 576px) { }
+@media (min-width: 768px) {
+    .nav{
+
+   
+        .nav__link{
+        display: inline-block;
+        border: none;
+        } 
+    }
+ }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) {
+    .nav{
+        text-align: right;
+    }
+ }
+@media (min-width: 1400px) { }

@@ -1,0 +1,44 @@
+/*Comentario*/
+//Comentario Sass
+@import './parciales/variables.scss';
+
+header {
+  background-color: aqua;
+}
+h1 {
+  color: brown;
+}
+header {
+  h1 {
+    color: blue;
+  }
+  nav {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      background-color: bisque;
+      display: inline-block;
+      padding: 10px;
+      color: black;
+      &:hover {
+        background-color: black;
+        color: bisque;
+      }
+    }
+  }
+}
+section {
+  width: 50%;
+  margin: 100px auto;
+  background-color: $color-fondo;
+  &.principal {
+    background-color: blueviolet;
+  }
+  div{
+    text-align: center
+  }
+  .btn{
+    @include boton;
+  }
+}
