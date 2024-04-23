@@ -1,0 +1,53 @@
+/*header*/
+.header{
+    &__logo{
+        text-align: center;
+    }
+    &__nav{ 
+        text-align: center;
+        background-color: $color-morado;
+        
+        .nav__link{
+            display: block;
+            color: $color-blanco;
+            padding: 0.5em;
+            border: 1px solid $colo-negro;
+            &:hover{
+                background-color: $colo-negro;
+                color: $color-morado;
+                border: 1px solid $color-morado;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 576px) { }
+@media (min-width: 768px) {
+    .header{
+        &__nav{ 
+            
+            .nav__link{
+                display: inline-block;
+                color: $color-blanco;
+                padding: 0.5em;
+                border: none;
+                &:hover{
+                    background-color: $colo-negro;
+                    color: $color-morado;
+                    border: none;
+                }
+            }
+        }
+    }
+ }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) {
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
+ }
+@media (min-width: 1400px) { }

@@ -1,12 +1,49 @@
 /*footer*/
 
+.footer{
+    padding: 1em 0;
+    background-color: $color-blanco;
+    text-align: center;
+    &__contenedor{
+        display: grid;
+        gap: 1em 0;
+    }
+    &__logo{
+
+    }
+    &__texto{
+
+    }
+    &__social{
+        a{
+            color: inherit;
+            padding: 1em;
+        }
+    }
+}
 
 
 
 
 
 @media (min-width: 576px) { }
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    .footer{
+        &__contenedor{
+            gap: 1em;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+    }
+ }
 @media (min-width: 992px) { }
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+    .footer{
+        &__contenedor{
+            gap: 1em;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+        }
+ }
+}
 @media (min-width: 1400px) { }

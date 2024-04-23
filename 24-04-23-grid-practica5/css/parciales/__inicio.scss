@@ -1,0 +1,123 @@
+/*Inicio*/
+/*Productos*/
+.productos {
+  width: 80%;
+  margin: 10px auto;
+  
+  
+  &__cards {
+    text-align: center;
+    display: grid;
+    gap: 10px 0;
+    background-color: $colo-negro;
+    color: white;
+    padding: 5px 30px;
+    
+  }
+  &__icons {
+    display: none;
+    .icon {
+    }
+  }
+}
+
+.servicios{
+    width: 80%;
+    margin: 20px auto;
+    &__card {
+        text-align: center;
+        display: grid;
+        gap: 10px 0;
+        padding: 20px;
+    }
+    &__link{
+        a{
+        background-color: $color-morado;
+        color: $color-blanco;
+        padding: 10px;
+        &:hover{
+            background-color: $colo-negro;
+            color: $color-morado;
+        }
+        }
+    }
+    &__icons{
+        display: none;
+    }
+}
+.exposicion{
+    display: none;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+    .productos{
+         
+        &__cards{
+            &--titular {
+        grid-area: titular;
+            }
+        grid-template-columns:1fr 1fr;
+        grid-template-areas: 
+        "titular titular";  
+    }
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .exposicion{
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        &__titular{
+            text-align: center;
+        }
+        &__images{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 10px 30px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .productos{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        &__icons{
+            display: block;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .icon{
+                padding: 20px;
+                font-size: 1.5em;
+            }
+            
+        }
+    }
+    .exposicion{
+        &__images{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .servicios{
+        grid-template-columns: 2fr 2fr 1fr;
+        &__icons{
+            display: block;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .icon{
+                padding: 20px;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+@media (min-width: 1400px) {
+}

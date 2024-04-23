@@ -64,4 +64,122 @@ h6 {
   }
 }
 /*inicio*/
-/*footer*//*# sourceMappingURL=estilos.css.map */
+section {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.productos__titular {
+  text-align: center;
+  margin: 1em 0;
+}
+.productos__card {
+  display: grid;
+  gap: 1em 0;
+}
+.productos .card {
+  border: 1px solid black;
+}
+.productos .card__texto {
+  margin: 1em 0;
+  padding: 0.5em;
+}
+.productos .card__img, .productos .servicios__img {
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.productos .card__img:hover, .productos .servicios__img:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.productos .card__btn {
+  text-align: center;
+}
+
+.servicios {
+  display: grid;
+  gap: 1em 0;
+}
+.servicios__titular {
+  text-align: center;
+}
+.servicios__contenido {
+  display: grid;
+  gap: 1em 0;
+}
+.btn {
+  display: inline-block;
+  background-color: red;
+  color: black;
+  border: 1px solid black;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  margin: 1em 0;
+}
+.btn:hover {
+  background-color: black;
+  color: red;
+  border: 1px solid red;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  section {
+    width: 70%;
+  }
+  .productos__card {
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .servicios__contenido {
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .productos__card {
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .servicios__contenido {
+    grid-template-columns: 1fr 2fr;
+  }
+  .servicios__contenido--revert {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+/*footer*/
+.footer {
+  padding: 1em 0;
+  background-color: white;
+  text-align: center;
+}
+.footer__contenedor {
+  display: grid;
+  gap: 1em 0;
+}
+.footer__social a {
+  color: inherit;
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer__contenedor {
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__contenedor {
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+}/*# sourceMappingURL=estilos.css.map */
