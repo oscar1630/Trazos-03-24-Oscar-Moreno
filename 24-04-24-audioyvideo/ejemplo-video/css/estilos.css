@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.videos {
+  display: grid;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .videos {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
