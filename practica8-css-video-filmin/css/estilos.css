@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+/*Variables*/
+/*Generales*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Header*/
+.header {
+  background-color: #141426;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+.header .header__movil {
+  position: fixed;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #141426;
+  padding: 20px;
+  top: 50px;
+  transition: all 0.5s ease;
+}
+.header:hover .header__movil {
+  left: 0;
+}
+.header a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.header .suscribete {
+  background-color: rgb(3, 255, 161);
+  color: #141426;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: "Black Han Sans", sans-serif;
+}
+.header .suscribete:hover {
+  opacity: 1;
+}
+.header .sesion {
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  margin-top: 10px;
+  font-family: "Black Han Sans", sans-serif;
+}
+.header .desplegable, .header .header__lupa {
+  font-size: 1.5em;
+}
+.header .header__logo {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .header .desplegable {
+    display: none;
+  }
+  .header .header__movil {
+    width: 100%;
+    position: static;
+    display: flex;
+    gap: 0 150px;
+    align-items: center;
+    padding: 0;
+  }
+  .header .header__movil a {
+    display: inline-block;
+  }
+  .header:hover .header__movil {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+  .header:hover .header__movil a {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .header .header__movil {
+    gap: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .header .header__movil {
+    gap: 550px;
+  }
+}
+/*Inicio*/
+/*Peliculas*/
+/*Peli*/
+/*Footer*//*# sourceMappingURL=estilos.css.map */
