@@ -1,1 +1,119 @@
 /*Inicio*/
+body {
+  background-color: $color-azul-fondo;
+}
+.banner {
+  position: relative;
+  font-family: $fuente-banner;
+
+  &__contenido {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: $color-blanco;
+    text-align: center;
+
+    .banner__btn {
+      display: inline;
+      a {
+        background-color: $color-verde-filmin;
+        color: $color-azul-fondo;
+        padding: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: $fuente-fuerte;
+      }
+    }
+    .banner__form {
+      padding: 30px;
+      input {
+        padding: 5px;
+        width: 40%;
+        background-color: $color-azul-fondo;
+        border: 1px solid gray;
+      }
+    }
+  }
+}
+.estrenos {
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  gap: 30px;
+  color: $color-blanco;
+  grid-template-areas: 'h2 ';
+  .h2 {
+    grid-area: h2;
+    padding: 10px;
+    a{
+        color: $color-blanco;
+    }
+  }
+  &__card {
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: $color-azul-fondo;
+    
+    .card__contenido {
+        opacity: 0;
+        position: absolute;
+        overflow: hidden;
+       
+        width: 100%;
+    }
+    &:hover {
+        z-index: 999;
+        transform: scale(1.3);
+        transition: all 0.5s ease;
+        
+      
+      .card__contenido {
+        overflow: auto;
+        opacity: 1;
+        background-color: rgb(6, 2, 65);
+      }
+    }
+
+    .card__texto{
+        padding:5px 20px;
+    }
+    .card__valoracion {
+      width: 50px;
+      padding: 10px;
+      border: 1px solid $color-blanco;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .estrenos {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 10px;
+    grid-template-areas: 'h2 h2';
+  }
+}
+@media (min-width: 992px) {
+  .banner {
+    &__contenido {
+      left: 10%;
+    }
+  }
+  .estrenos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'h2 h2 h2 h2';
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    &__contenido {
+      left: 20%;
+      top: 30%;
+    }
+  }
+}
+@media (min-width: 1400px) {
+}
