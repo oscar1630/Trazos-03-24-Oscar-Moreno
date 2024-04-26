@@ -1,1 +1,18 @@
 /*Footer*/
+.footer{
+    background-color: $color-negro;
+    color: $color-blanco;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    &__links, &__social{
+
+        a{
+            color: gray;
+            padding: 20px;
+        }
+    }
+
+    
+}
