@@ -45,37 +45,35 @@ body {
   .h2 {
     grid-area: h2;
     padding: 10px;
-    a{
-        color: $color-blanco;
+    a {
+      color: $color-blanco;
     }
   }
   &__card {
     transition: all 0.5s ease;
     position: relative;
     background-color: $color-azul-fondo;
-    
+
     .card__contenido {
-        opacity: 0;
-        position: absolute;
-        overflow: hidden;
-       
-        width: 100%;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      display: none;
     }
     &:hover {
-        z-index: 999;
-        transform: scale(1.3);
-        transition: all 0.5s ease;
-        
+      z-index: 999;
+      transform: scale(1.3);
+      transition: all 0.5s ease;
       
       .card__contenido {
-        overflow: auto;
         opacity: 1;
         background-color: rgb(6, 2, 65);
+        display: block;
       }
     }
 
-    .card__texto{
-        padding:5px 20px;
+    .card__texto {
+      padding: 5px 20px;
     }
     .card__valoracion {
       width: 50px;

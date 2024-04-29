@@ -1,0 +1,137 @@
+/*Cars*/
+.trailer {
+  &__video {
+    video {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+  &__contenido {
+    padding: 30px;
+    display: flex;
+    color: $color-blanco;
+
+    p {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    .contenido__valoracion {
+      border: 1px solid $color-blanco;
+      padding: 10px;
+    }
+  }
+  &__botones {
+    padding: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .botones__link {
+      padding: 20px;
+      background-color: $color-verde-filmin;
+      border-radius: 10px;
+      a {
+        color: $color-negro;
+        text-transform: uppercase;
+      }
+    }
+    .btn {
+      display: flex;
+      gap: 10px;
+      a {
+        font-size: 2em;
+        color: $color-blanco;
+      }
+    }
+  }
+}
+.detalles {
+  display: grid;
+  color: $color-blanco;
+  width: 80%;
+  margin: 100px auto;
+  gap: 20px;
+
+  &__1 {
+    display: grid;
+    gap: 20px;
+    .detalles__card {
+      border: 1px solid $color-blanco;
+      padding: 10px;
+      .lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        .lista__link {
+          background-color: gray;
+          border-radius: 10px;
+          padding: 10px;
+        }
+        a {
+          color: $color-blanco;
+          display: block;
+        }
+      }
+    }
+  }
+  &__2 {
+    display: grid;
+    gap: 20px;
+    .detalles__card {
+      border: 1px solid $color-blanco;
+      padding: 20px;
+      
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .trailer {
+    &__botones {
+      position: absolute;
+      top: 60%;
+      right: 20%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .trailer {
+    position: relative;
+    &__contenido {
+      position: absolute;
+      top: 0;
+    }
+    &__botones {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+  .detalles{
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}
+@media (min-width: 1200px) {
+  .trailer {
+    position: relative;
+    &__contenido {
+      position: absolute;
+      top: 10%;
+      p {
+        width: 30%;
+      }
+    }
+    &__botones {
+      position: absolute;
+      top: 60%;
+      left: 25%;
+    }
+  }
+
+}
+@media (min-width: 1400px) {
+}

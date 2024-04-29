@@ -31,6 +31,7 @@ img {
   align-items: center;
   padding: 10px;
   position: relative;
+  z-index: 999;
 }
 .header .header__movil {
   position: fixed;
@@ -83,7 +84,7 @@ img {
     width: 100%;
     position: static;
     display: flex;
-    gap: 0 150px;
+    gap: 200px;
     align-items: center;
     padding: 0;
   }
@@ -106,7 +107,7 @@ img {
 }
 @media (min-width: 1200px) {
   .header .header__movil {
-    gap: 550px;
+    gap: 600px;
   }
 }
 /*Inicio*/
@@ -169,8 +170,8 @@ body {
 .estrenos__card .card__contenido {
   opacity: 0;
   position: absolute;
-  overflow: hidden;
   width: 100%;
+  display: none;
 }
 .estrenos__card:hover {
   z-index: 999;
@@ -178,9 +179,9 @@ body {
   transition: all 0.5s ease;
 }
 .estrenos__card:hover .card__contenido {
-  overflow: auto;
   opacity: 1;
   background-color: rgb(6, 2, 65);
+  display: block;
 }
 .estrenos__card .card__texto {
   padding: 5px 20px;
@@ -281,11 +282,12 @@ body {
 }
 .cards__card .card__contenido .col-10 {
   width: 80%;
-  padding: 15px;
+  padding-top: 200px;
+  padding-left: 20px;
 }
 .cards__card .card__contenido .col-2 {
   width: 20%;
-  padding: 15px;
+  padding-top: 200px;
 }
 .cards__card:hover .card__img {
   opacity: 0.5;
@@ -299,16 +301,141 @@ body {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-  .cards__card .col-10 {
-    padding: 10px;
+  .cards__card .card__contenido .col-10 {
+    width: 80%;
+    padding-top: 90px;
+    padding-left: 20px;
   }
-  .cards__card .col-2 {
-    padding: 10px;
+  .cards__card .card__contenido .col-2 {
+    width: 20%;
+    padding-top: 90px;
   }
 }
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/*Cars*/
+.trailer__video video {
+  width: 100%;
+  opacity: 0.5;
+}
+.trailer__contenido {
+  padding: 30px;
+  display: flex;
+  color: white;
+}
+.trailer__contenido p {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.trailer__contenido .contenido__valoracion {
+  border: 1px solid white;
+  padding: 10px;
+}
+.trailer__botones {
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.trailer__botones .botones__link {
+  padding: 20px;
+  background-color: rgb(3, 255, 161);
+  border-radius: 10px;
+}
+.trailer__botones .botones__link a {
+  color: black;
+  text-transform: uppercase;
+}
+.trailer__botones .btn {
+  display: flex;
+  gap: 10px;
+}
+.trailer__botones .btn a {
+  font-size: 2em;
+  color: white;
+}
+
+.detalles {
+  display: grid;
+  color: white;
+  width: 80%;
+  margin: 100px auto;
+  gap: 20px;
+}
+.detalles__1 {
+  display: grid;
+  gap: 20px;
+}
+.detalles__1 .detalles__card {
+  border: 1px solid white;
+  padding: 10px;
+}
+.detalles__1 .detalles__card .lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.detalles__1 .detalles__card .lista .lista__link {
+  background-color: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.detalles__1 .detalles__card .lista a {
+  color: white;
+  display: block;
+}
+.detalles__2 {
+  display: grid;
+  gap: 20px;
+}
+.detalles__2 .detalles__card {
+  border: 1px solid white;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .trailer__botones {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .trailer {
+    position: relative;
+  }
+  .trailer__contenido {
+    position: absolute;
+    top: 0;
+  }
+  .trailer__botones {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .detalles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .trailer {
+    position: relative;
+  }
+  .trailer__contenido {
+    position: absolute;
+    top: 10%;
+  }
+  .trailer__contenido p {
+    width: 30%;
+  }
+  .trailer__botones {
+    position: absolute;
+    top: 60%;
+    left: 25%;
   }
 }
 /*Peli*/

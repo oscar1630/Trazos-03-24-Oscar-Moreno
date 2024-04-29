@@ -62,11 +62,12 @@
             }
             .col-10{
                 width: 80%;
-                padding: 15px;
+                padding-top: 200px;
+                padding-left: 20px;
             }
             .col-2{
                 width: 20%;
-                padding: 15px;
+                padding-top: 200px;
             }
             
         }
@@ -90,11 +91,16 @@
     .cards{
         grid-template-columns: 1fr 1fr;
         &__card{
-            .col-10{
-                padding: 10px;
-            }
-            .col-2{
-                padding: 10px;
+            .card__contenido{
+                .col-10{
+                    width: 80%;
+                    padding-top: 90px;
+                    padding-left: 20px;
+                }
+                .col-2{
+                    width: 20%;
+                    padding-top: 90px;
+                }
             }
         }
     }
