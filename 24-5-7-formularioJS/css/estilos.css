@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 50%;
+  margin: 10% auto;
+  background-color: goldenrod;
+  padding: 20px;
+  border-radius: 5px;
+}
+section h2 {
+  text-align: center;
+}
+section div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 80%;
+}
+section div input, section div select.textarea {
+  width: 60%;
+  padding: 5px;
+}
+section div input[type=checkbox], section div select.textarea[type=checkbox] {
+  width: 10%;
+}
+section div.boton {
+  justify-content: end;
+}
+section div.boton button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+section div.boton button:hover {
+  background-color: goldenrod;
+}
+section p {
+  height: 16px;
+}
+
+.rojo {
+  border: red 2px dotted;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 50%;
+    margin: 10% auto;
+    background-color: goldenrod;
+    padding: 20px;
+    border-radius: 5px;
+h2{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 80%;
+    
+    input,select.textarea{
+        width: 60%;
+        padding: 5px;
+        &[type= "checkbox"]{
+            width: 10%;
+        }
+    }
+    &.boton{
+        justify-content: end;
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            &:hover{
+                background-color: goldenrod;
+                
+            }
+        }
+
+    }
+}
+p{
+    height: 16px;
+}
+}
+.rojo{
+    border: red 2px dotted;
+}
