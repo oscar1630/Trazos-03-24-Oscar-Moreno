@@ -18,9 +18,16 @@ section h2 {
 }
 section div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
   width: 80%;
+}
+section div p {
+  width: 100%;
+  text-align: right;
+  color: red;
+  padding: 5px;
 }
 section div input, section div select.textarea {
   width: 60%;
