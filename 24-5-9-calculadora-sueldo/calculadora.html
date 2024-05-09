@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora seldo burto y neto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/calculadora.js" defer></script>
+
+</head>
+<body>
+    <header> 
+            <div><img src="images/logo-para-case-study-bbva.png" alt=""></div>
+            <h1>Calculadora sueldo neto mensual</h1>
+    </header>
+    <section class="section1">
+        <h2> Completa los siguientes campos</h2>
+        <div class="formulario">
+        <div class="formulario__contenido">
+            <label for="">Sueldo bruto anual</label>
+            <input type="number" placeholder="30000" id="bruto">
+        </div>
+        <div class="formulario__contenido">
+            <label for="">Nº de hijo</label>
+           <select name="" id="hijos">
+            <option value="">Seleccione el numero de hijos</option>
+            <option value="0">0</option>
+            <option value="1-2">1-2</option>
+            <option value="3+">3 o mas</option>
+           </select>
+        </div>
+        <div class="formulario__contenido">
+            <label for="">Tipo de contrato</label>
+            <select name="" id="contrato">
+                <option value="">Seleccione el tipo de contrato</option>
+                <option value="indefinido">Indefinido</option>
+                <option value="temporal">Temporal</option>
+            </select>
+        </div>
+        <div class="formulario__contenido">
+            <label for="">Nº de pagas</label>
+            <select name="" id="pagas">
+                <option value="">Seleccion el Nº de pagas</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+            </select>
+        </div>
+        <div class="formulario__contenido formulario__contenido--boton">
+            <p id="error"></p>
+            <input type="button" value="Calcular" id="calcular" onclick="calcular()">
+        </div>
+        </div>
+    </section>
+    <section class="resultados">
+        <h2>Su calculo de sueldo neto mensual en <span id="nPagas">X</span> pagas es:</h2>
+        <div>
+            <h4>Retencion por hijos:</h4>
+            <p id="rHijos"></p>
+        </div>
+        <div>
+            <h4>Retencion por tipo de contrato:</h4>
+            <p id="rContrato"></p>
+        </div>
+        <div>
+            <h4>Sueldo neto mensual:</h4>
+            <p id="rSueldo"></p>
+        </div>
+    </section>
+    <footer>
+        
+            <img src="images/logo-para-case-study-bbva.png" alt="">
+            <p>© 2024 Todos los erechos reservados</p>
+        
+    </footer>
+</body>
+</html>

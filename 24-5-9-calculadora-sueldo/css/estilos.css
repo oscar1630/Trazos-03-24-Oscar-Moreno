@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+.section1 {
+  width: 80%;
+  margin: 15px auto;
+  text-align: center;
+  background-color: blue;
+}
+.section1 h2 {
+  color: white;
+}
+.section1 .formulario {
+  background-color: white;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+.section1 .formulario__contenido {
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .formulario input[type=button] {
+  padding: 10px;
+  text-align: right;
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+}
+.section1 .formulario .formulario__contenido--boton {
+  justify-content: end;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.rojo {
+  color: red;
+}
+
+.resultados {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: blue;
+}
+.resultados h2 {
+  color: white;
+}
+.resultados div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 80;
+  margin: auto;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+footer {
+  border-top: 1px solid blue;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}/*# sourceMappingURL=estilos.css.map */
