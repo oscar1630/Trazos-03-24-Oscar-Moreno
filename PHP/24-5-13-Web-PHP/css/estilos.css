@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 10px 0;
+}
+.header__logo img {
+  width: 160px;
+}
+.header .nav {
+  background-color: #002d18;
+}
+.header .nav__link {
+  display: inline-block;
+  color: white;
+  padding: 5px;
+}
+.header .nav__link:hover {
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #002d18;
+    gap: 20px;
+  }
+  .header .nav__list {
+    display: inline-block;
+  }
+}
+.categorias {
+  width: 90%;
+  margin: 3em auto;
+}
+.categorias__titulo {
+  text-align: center;
+  margin: 1em 0;
+}
+.categorias__bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.categorias__card {
+  text-align: center;
+}
+.categorias__foto {
+  display: block;
+}
+.categorias__foto img {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.categorias__foto img:hover {
+  opacity: 0.4;
+  transition: all 0.5s ease;
+}
+.categorias__btn {
+  display: block;
+  background-color: #002d18;
+  color: white;
+  padding: 5px 10px;
+  transition: all 0.5s ease;
+}
+.categorias__btn:hover {
+  background-color: rgb(159, 159, 159);
+  color: #002d18;
+  border: 1px solid #002d18;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .categorias__bloque {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.productos {
+  width: 90%;
+  margin: 100px auto;
+}
+.productos__titulo {
+  text-align: center;
+  margin: 1em 0;
+}
+.productos__bloque {
+  display: grid;
+  gap: 20px;
+}
+.productos__card {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .productos__bloque {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .productos__bloque {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=estilos.css.map */

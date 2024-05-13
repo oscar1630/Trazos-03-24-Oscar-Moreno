@@ -1,0 +1,33 @@
+.productos{
+    width: 90%;
+    margin: 100px auto;
+   &__titulo{
+    text-align: center;
+    margin: 1em 0;
+   }
+   &__bloque{
+    display: grid;
+    gap: 20px;
+   }
+    &__card{
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) { }
+@media (min-width: 768px) {
+    .productos{
+        &__bloque{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+ }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) {
+    .productos{
+        &__bloque{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+ }
+@media (min-width: 1400px) { }
