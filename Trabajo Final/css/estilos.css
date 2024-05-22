@@ -82,7 +82,7 @@ img {
   }
   .header:hover .header__nav .nav__rrss {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
   }
   .header:hover .header__nav .nav__rrss a {
     padding: 4px;
@@ -143,6 +143,53 @@ img {
     display: block;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.galeria {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.fotos img {
+  display: none;
+}
+.fotos img.activo {
+  display: block;
+}
+
+.flechas {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flecha {
+  color: black;
+  font-size: 2em;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.flecha:hover {
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.puntos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 .footer {
   background-color: rgb(14, 14, 12);
 }
@@ -169,6 +216,9 @@ img {
 .footer__contenido .footer__rrss a {
   color: rgb(203, 171, 91);
   padding: 2px;
+}
+.footer__contenido .footer__rrss a:hover {
+  color: white;
 }
 .footer__copy {
   border-top: 1px solid white;
