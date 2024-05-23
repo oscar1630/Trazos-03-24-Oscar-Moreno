@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 *,
 *::after,
 *::before {
@@ -12,6 +14,10 @@ a {
 
 img {
   max-width: 100%;
+}
+
+body {
+  font-family: "PT Serif", serif;
 }
 
 .header {
@@ -30,10 +36,12 @@ img {
   color: rgb(203, 171, 91);
   font-size: 1.5em;
   padding: 20px;
+  z-index: 999;
 }
 .header__img p {
   color: rgb(203, 171, 91);
   text-align: center;
+  font-family: "Dancing Script";
 }
 .header__nav {
   background-color: rgb(14, 14, 12);
@@ -43,6 +51,7 @@ img {
   width: 120px;
   height: 100%;
   display: none;
+  font-family: "Oleo Script";
 }
 .header__nav a {
   color: rgb(203, 171, 91);
@@ -173,7 +182,7 @@ img {
 }
 
 .flecha {
-  color: black;
+  color: white;
   font-size: 2em;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -188,6 +197,135 @@ img {
   gap: 10px;
   justify-content: center;
   margin: 10px 0;
+}
+
+.horario table {
+  width: 80%;
+  margin: 100px auto;
+}
+.horario table th {
+  background-color: rgb(203, 171, 91);
+  border: 1px solid rgb(14, 14, 12);
+}
+.horario table td {
+  color: rgb(14, 14, 12);
+  border: 2px solid rgb(203, 171, 91);
+  padding: 20px;
+  text-align: center;
+  height: 100px;
+  font-size: 1.5em;
+}
+
+.lista {
+  width: 80%;
+  margin: 100px auto;
+  font-size: 1.5em;
+}
+
+.otro-mes {
+  background-color: lightgrey;
+}
+
+.formulario {
+  width: 50%;
+  margin: 10% auto;
+  background-color: #b0b0b0;
+  padding: 20px;
+  border-radius: 5px;
+}
+.formulario h2 {
+  text-align: center;
+}
+.formulario div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 80%;
+}
+.formulario div p {
+  width: 100%;
+  text-align: right;
+  color: red;
+  padding: 5px;
+}
+.formulario div input,
+.formulario div select,
+.formulario div textarea {
+  width: 60%;
+  padding: 5px;
+}
+.formulario div input[type=checkbox],
+.formulario div select[type=checkbox],
+.formulario div textarea[type=checkbox] {
+  width: 10%;
+}
+.formulario div.checkbox {
+  display: block;
+  text-align: right;
+}
+.formulario div.checkbox input {
+  width: 200px;
+}
+.formulario div.boton {
+  width: 80%;
+  justify-content: end;
+}
+.formulario div.boton .button {
+  background-color: rgb(14, 14, 12);
+  width: 200px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.formulario div.boton .button:hover {
+  background-color: rgb(203, 171, 91);
+}
+.formulario p {
+  height: 16px;
+}
+.formulario #servicios {
+  width: 40%;
+}
+.formulario #mensaje {
+  width: 60%;
+}
+
+.rojo {
+  border: red 2px dotted;
+}
+
+.corneta {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.bombardino {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.trompeta {
+  position: absolute;
+  top: 13%;
+  left: 45%;
+}
+.trompeta img {
+  height: 200px;
+}
+
+.tambor {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.bombo {
+  position: absolute;
+  top: 50%;
+  right: 10%;
 }
 
 .footer {
@@ -206,6 +344,7 @@ img {
 }
 .footer__contenido .footer__img p {
   text-align: center;
+  font-family: "Dancing Script";
 }
 .footer__contenido .footer__rrss {
   display: grid;

@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("ReStoreHashSchemaProvider",["ReStoreHashMigration"],(function(a,b,c,d,e,f,g){"use strict";a=function(){function a(a,b){var c=a.tableIds;a=a.tableNames;b===void 0&&(b={});this.tableNames=a;this.tableIds=c;this.defaults=(a=b)!=null?a:{}}var b=a.prototype;b.migrate=function(a){return d("ReStoreHashMigration").runHashMigration(a)};return a}();g["default"]=a}),98);

@@ -1,0 +1,96 @@
+.formulario {
+  width: 50%;
+  margin: 10% auto;
+  background-color: #b0b0b0;
+  padding: 20px;
+  border-radius: 5px;
+  h2 {
+    text-align: center;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 80%;
+    p {
+      width: 100%;
+      text-align: right;
+      color: red;
+      padding: 5px;
+    }
+    input,
+    select,
+    textarea {
+      width: 60%;
+      padding: 5px;
+      &[type='checkbox'] {
+        width: 10%;
+      }
+    }
+    &.checkbox {
+      display: block;
+      text-align: right;
+      input{
+        width: 200px;
+      }
+    }
+    &.boton {
+      width: 80%;
+      justify-content: end;
+
+      .button {
+        background-color: $color-negro;
+        width: 200px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        &:hover {
+          background-color: $color-amarillo;
+        }
+      }
+    }
+  }
+  p {
+    height: 16px;
+  }
+  #servicios {
+    width: 40%;
+  }
+  #mensaje {
+    width: 60%;
+  }
+  
+}
+.rojo {
+  border: red 2px dotted;
+}
+
+.corneta {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.bombardino {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+.trompeta {
+  position: absolute;
+  top: 13%;
+  left: 45%;
+  img {
+    height: 200px;
+  }
+}
+.tambor {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+.bombo {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}

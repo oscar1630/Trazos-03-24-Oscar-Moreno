@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("MAWAsyncEBPendingQueryPromise",["Promise"],(function(a,b,c,d,e,f){"use strict";var g,h=new Map(),i=new Map(),j=new Map();function a(a){var c=new(g||(g=b("Promise")))(function(b,c){i.set(a,b),j.set(a,c)});h.set(a,c);return c}function c(a,b){var c=i.get(a);c!=null&&(i["delete"](a),c(b))}function d(a,b){var c=j.get(a);c!=null&&(i["delete"](a),c(b))}f.getPendingQueryPromiseFromTrace=a;f.resolvePendingQueryIfPresent=c;f.rejectPendingQueryIfPresent=d}),66);

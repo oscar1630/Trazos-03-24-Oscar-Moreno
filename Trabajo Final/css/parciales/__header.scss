@@ -14,10 +14,12 @@
         color: rgb(203, 171, 91);
         font-size: 1.5em;
         padding: 20px;
+        z-index: 999;
        }
        p{
         color: rgb(203, 171, 91);
         text-align: center;
+        font-family: $letra-titulo;
        }
     }
     &__nav{
@@ -35,6 +37,7 @@
         width: 120px;
         height: 100%;
         display: none;
+        font-family: $letra-nav;
         .nav__links{
            a{
             display: block;

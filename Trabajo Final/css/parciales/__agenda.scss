@@ -1,0 +1,32 @@
+.horario{
+    
+    table{
+        width: 80%;
+        margin: 100px auto;
+        tr{
+
+        }
+        th{
+            background-color: $color-amarillo;
+            border: 1px solid $color-negro;
+        }
+        td{
+            color: $color-negro;
+            border: 2px solid $color-amarillo;
+            padding: 20px;
+            text-align: center;
+            height: 100px;
+            font-size: 1.5em;
+            
+        }
+    }
+}
+.lista{
+    width: 80%;
+    margin: 100px auto;
+    font-size: 1.5em;
+}
+.otro-mes{
+    background-color: lightgrey;
+    
+}
