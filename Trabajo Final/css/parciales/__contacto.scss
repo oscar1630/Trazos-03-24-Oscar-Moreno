@@ -1,12 +1,6 @@
 .formulario {
-  width: 50%;
-  margin: 10% auto;
-  background-color: #b0b0b0;
+  margin-left: 10%;
   padding: 20px;
-  border-radius: 5px;
-  h2 {
-    text-align: center;
-  }
   div {
     display: flex;
     flex-wrap: wrap;
@@ -65,32 +59,47 @@
 .rojo {
   border: red 2px dotted;
 }
-
-.corneta {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+.ig{
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+  color: transparent ;
+  background-clip: text;
+  
+  padding: 10px;
+  border-radius: 15px;
 }
-.bombardino {
-  position: absolute;
-  top: 45%;
-  left: 10%;
+.email{
+  color: rgb(192, 18, 18);
+  padding: 10px;
 }
-.trompeta {
-  position: absolute;
-  top: 13%;
-  left: 45%;
-  img {
-    height: 200px;
+.informacion{
+  width: 80%;
+  margin: 100px auto;
+  div{
+    padding: 30px;
   }
 }
-.tambor {
-  position: absolute;
-  top: 20%;
-  right: 10%;
+.img{
+  padding: 20px;
+  height: 100%;
 }
-.bombo {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-}
+@media (min-width: 576px) { }
+@media (min-width: 768px) { }
+@media (min-width: 992px) {
+  
+ }
+@media (min-width: 1200px) {
+  .contacto{
+    display: flex;
+    align-items: center;
+    top: 300px;
+    .img{
+      img{
+        padding: 10px;
+      }
+      width: 100%;
+      
+    }
+  }
+ }
+
+

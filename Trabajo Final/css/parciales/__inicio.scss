@@ -29,7 +29,7 @@
 }
 .flecha{
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     transition: all 0.5s ease;
     cursor: pointer;
     &:hover{
@@ -42,4 +42,38 @@
     gap: 10px;
     justify-content: center;
     margin: 10px 0;
+}
+
+.eventos{
+    h1{
+        text-align: center;
+        font-size: 2.5em;
+        
+    }
+    &__medina{
+        width: 80%;
+        margin: auto;
+        padding: 100px;
+        h2{
+            text-transform: uppercase;
+            padding: 10px;
+        }
+        .img{
+            width: 80%;
+            margin: auto;
+        }
+        .medina__images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 50px;
+            img{
+                transition: all 0.5s ease;
+                &:hover{
+                    transition: all 0.5s ease;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
 }

@@ -51,7 +51,6 @@ body {
   width: 120px;
   height: 100%;
   display: none;
-  font-family: "Oleo Script";
 }
 .header__nav a {
   color: rgb(203, 171, 91);
@@ -183,7 +182,7 @@ body {
 
 .flecha {
   color: white;
-  font-size: 2em;
+  font-size: 2.5em;
   transition: all 0.5s ease;
   cursor: pointer;
 }
@@ -197,6 +196,42 @@ body {
   gap: 10px;
   justify-content: center;
   margin: 10px 0;
+}
+
+.eventos h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.eventos__medina {
+  width: 80%;
+  margin: auto;
+  padding: 100px;
+}
+.eventos__medina h2 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+.eventos__medina .img {
+  width: 80%;
+  margin: auto;
+}
+.eventos__medina .medina__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+}
+.eventos__medina .medina__images img {
+  transition: all 0.5s ease;
+}
+.eventos__medina .medina__images img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+
+.imagen2 img {
+  width: 100%;
+  height: 500px;
 }
 
 .horario table {
@@ -227,14 +262,8 @@ body {
 }
 
 .formulario {
-  width: 50%;
-  margin: 10% auto;
-  background-color: #b0b0b0;
+  margin-left: 10%;
   padding: 20px;
-  border-radius: 5px;
-}
-.formulario h2 {
-  text-align: center;
 }
 .formulario div {
   display: flex;
@@ -295,39 +324,46 @@ body {
   border: red 2px dotted;
 }
 
-.corneta {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+.ig {
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-.bombardino {
-  position: absolute;
-  top: 45%;
-  left: 10%;
+.email {
+  color: rgb(192, 18, 18);
+  padding: 10px;
 }
 
-.trompeta {
-  position: absolute;
-  top: 13%;
-  left: 45%;
+.informacion {
+  width: 80%;
+  margin: 100px auto;
 }
-.trompeta img {
-  height: 200px;
-}
-
-.tambor {
-  position: absolute;
-  top: 20%;
-  right: 10%;
+.informacion div {
+  padding: 30px;
 }
 
-.bombo {
-  position: absolute;
-  top: 50%;
-  right: 10%;
+.img {
+  padding: 20px;
+  height: 100%;
 }
 
+@media (min-width: 1200px) {
+  .contacto {
+    display: flex;
+    align-items: center;
+    top: 300px;
+  }
+  .contacto .img {
+    width: 100%;
+  }
+  .contacto .img img {
+    padding: 10px;
+  }
+}
 .footer {
   background-color: rgb(14, 14, 12);
 }
